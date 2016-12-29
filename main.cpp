@@ -40,7 +40,7 @@ inline void procImage (cv::Mat &img , cv::Mat &output , int threshold , int erod
     
     cv::threshold (img , output , threshold , 255 , cv::THRESH_BINARY | cv::THRESH_OTSU);
     
-    cv::imshow ("befire" , img);
+    //   cv::imshow ("befire" , img);
     
     cv::erode (output , output , erode_elem);
     //   cv::imshow("erode",output);
